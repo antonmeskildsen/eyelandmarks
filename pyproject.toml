@@ -1,0 +1,30 @@
+[tool.poetry]
+authors = ["Anton Mølbjerg Eskildsen <antonmeskildsen@me.com>"]
+description = "Landmark and segmentation models for eye features."
+name = "eyelandmarks"
+version = "0.1.0"
+
+[tool.poetry.scripts]
+eyelandmarks = "eyelandmarks.cli:main"
+
+[tool.poetry.dependencies]
+dataclasses-json = "^0.5.7"
+docstring-parser = "^0.13"
+glob2 = "^0.7"
+jsonargparse = "^4.6.0"
+opencv-python = "^4.5.5"
+pandas = "^1.4.2"
+python = "^3.9"
+pytorch-lightning = {git = "https://github.com/PyTorchLightning/pytorch-lightning.git"}
+torch = "^1.11.0"
+torchmetrics = "^0.7.3"
+torchvision = "^0.12.0"
+wandb = "^0.12.14"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+pytest = "^7.1.1"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]

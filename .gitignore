@@ -1,0 +1,8 @@
+.venv/
+.DS_Store
+
+logs/
+lightning_logs/
+checkpoints/
+
+**__pycache__/

@@ -1,0 +1,14 @@
+fit:
+  trainer:
+    gpus: 0
+    logger:
+      class_path: pytorch_lightning.loggers.WandbLogger
+      init_args:
+        save_dir: logs
+  data:
+    path: "/Volumes/D0/datasets/gaze/teyed_tiny/"
+    dataset_type: eyelandmarks.data.AllLandmarksDataset
+    transformed_width: 128
+    num_workers: 4
+  model:
+    model: eyelandmarks.models.ManyLandmarks
